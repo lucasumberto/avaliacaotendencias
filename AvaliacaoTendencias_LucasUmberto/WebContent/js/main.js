@@ -4,17 +4,13 @@ function addCartao(){
   var idade = document.getElementsByName("idade");
   idade = idade[0].value;
   
-  var sexo = document.getElementsByName('sexo');
-  var sexo_selecionado;
-  for(var i = 0; i < sexo.length; i++){
-      if(sexo[i].checked){
-    	  sexo_selecionado = sexo[i].value;
-      }
-  }
-  if(sexo_selecionado = "feminino"){
-	  sexo_selecionado = "img/fem.jpg";
+  
+  var sexo = document.forms[0].sexo.value;
+  
+  if(sexo == "Feminino"){
+	  sexo = "img/fem.jpg";
   }else{
-	  sexo_selecionado = "img/masc.jpg";
+	  sexo = "img/masc.jpg";
   }
   
   var cores = document.getElementById("cores");
@@ -23,5 +19,5 @@ function addCartao(){
   var div = document.createElement('div');
   document.body.appendChild(div);
   div.setAttribute("class", "cartao");
-  div.innerHTML = '<img src="'+sexo_selecionado+'" align="left"><br>'+nome+'<br>'+idade+' anos<br>'+cor;
+  div.innerHTML = '<img src="'+sexo+'" align="left"><br>'+nome+'<br>'+idade+' anos<br>'+cor;
 };
