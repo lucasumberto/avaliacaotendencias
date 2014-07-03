@@ -1,0 +1,15 @@
+.cartao{
+	float: left;
+	border-style: solid;
+  	border-color: black;
+  	height: 165px;
+  	width: 300px;
+}
+.container{
+	width: auto;
+	height: auto;
+}
+img { 
+	
+	margin:0 20px 10px 0; 
+} 

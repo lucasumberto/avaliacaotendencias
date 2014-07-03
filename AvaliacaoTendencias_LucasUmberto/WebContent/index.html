@@ -2,20 +2,26 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/padrao.css">
 <title>Avaliação Tendencias e Demandas</title>
 </head>
 <body>
 	<form name="form" action="/js/main.js" method="get">
 		Nome:
+		<br>
 		<input name="nome" type="text" value="" />
 		<br>
 		Idade:
+		<br>
 		<input name="idade" type="text" value="" />
 		<br>
 		Sexo:
-		<input name="sexo" type="text" value="" />
+		<br>
+		Feminino:<input name="sexo" type="radio" value="Feminino" />
+		Masculino:<input name="sexo" type="radio" value="Masculino" />
 		<br>
 		Cores:
+		<br>
 		<select>
 			<option value="branco">Branco</option>
 			<option value="preto">Preto</option>
@@ -29,5 +35,22 @@
 		<br>
 		
 	</form>
+	<div class="container">
+		<div name="cartao" class="cartao">
+			<img alt="fotomasc" src="img/masc.jpg" align="left">
+			<br>
+			José<br>
+			21 anos<br>
+			Azul
+		</div>
+		
+		<div name="cartao" class="cartao">
+			<img alt="fotofem" src="img/fem.jpg" align="left">
+			<br>
+			Ana<br>
+			19 anos<br>
+			Rosa
+		</div>
+	</div>
 </body>
 </html>
